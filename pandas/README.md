@@ -9,7 +9,10 @@
 
 
 ```python
+# Importing dependencies
 import pandas as pd
+
+# Reading data from a json file
 filename = 'purchase_data.json'
 purchase_df = pd.read_json(filename)
 ```
