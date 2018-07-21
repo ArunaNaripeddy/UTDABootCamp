@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Analysis</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-default bg-light">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="index.html"><strong>Latitude</strong></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown active">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Max Temperature</a></li>
+                                    <li><a href="humidity.html">Humidity</a></li> 
+                                    <li><a href="cloudiness.html">Cloudiness</a></li> 
+                                    <li><a href="wind_speed.html">Wind Speed</a></li> 
+                                </ul>
+                            </li>
+                            <li><a href="Comparision.html">Comparision</a></li>
+                            <li><a href="data.html">Data</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    
+    <!-- Main body content for the index page -->
+    <main>
+        <div class="container-fluid">
+            <div class="row row-padding">
+                <div class="col-md-8 ">
+                    <div class="my-box clearfix ">
+                        <h1>Max Temperature</h1>
+                        <hr>
+                        <img class="img-responsive " src="Resources/assets/images/max_temp.png" alt="Max Temperature image"/>
+                        <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude).
+                            More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year
+                            than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data
+                            was gathered. </p>
+                        
+                    </div> <!-- End of div=my-box -->
+                </div> <!-- End of column -->
+
+                <div class="col-md-4">
+                    <div class="my-box">
+                        <h2>Visualizations</h2>
+                        <hr>
+                        <div class="row ">
+                            <div class="col-md-6 col-xs-3 img-size">
+                                <a href="max_temp.html"><img class="img-responsive my-img-active" src="Resources/assets/images/max_temp.png" alt="Max Temperature image"/></a>
+                            </div>
+                            <div class="col-md-6 col-xs-3 img-size">
+                                <a href="humidity.html"><img class="img-responsive" src="Resources/assets/images/humidity.png" alt="Humidity"></a> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-3 img-size">
+                                <a href="cloudiness.html"><img class="img-responsive" src="Resources/assets/images/cloudiness.png" alt="Cloudiness"></a>
+                            </div>
+                            <div class="col-md-6 col-xs-3 img-size">
+                                <a href="wind_speed.html"><img class="img-responsive" src="Resources/assets/images/wind_speed.png" alt="Wind Speed"></a>
+                            </div>
+                        </div>
+                    </div> <!-- End of div=my-box -->
+                </div>  <!-- End of visualization column -->
+            </div> <!-- End of grid row -->
+        </div> <!-- End of container -->
+    </main>     
+</body>
+</html>
+
+ 
+
+ 

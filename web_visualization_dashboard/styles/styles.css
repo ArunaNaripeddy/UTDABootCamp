@@ -1,0 +1,84 @@
+/* Note: Any class names prefixed with my-* are user defined classes to add styles*/
+html {
+    font-family: Arial, "Times New Roman", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #dad6d6 !important;
+    margin-bottom: 60px; 
+}
+
+/* Styles for navbar */
+.navbar {
+    border: 0px;
+    font-size: 12px;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    padding: 0px 0px 0px 75px;
+}
+
+.navbar-brand {
+    margin-top: 1px;
+    color: #fff !important;
+    background-color: rgb(68, 151, 151);
+    font-size: 30px !important;
+    font-weight: bold;
+}
+
+.my-dropdown-menu li a{
+    font-weight: bold;
+    color: black !important;
+}
+
+/* styles for headings and pagragraph elements */
+h1, h2, h3{
+    color: rgb(68, 151, 151);
+    font-family: Arial, "Times New Roman", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+    color: grey;
+}
+
+/* Adding margins to the container */
+.container-margin{
+    background-color: white;
+    margin: 20px 30px 100px 60px;
+    padding: 30px;
+} 
+
+/* Adding background and padding to the grid boxes */
+.my-box {
+    min-height: 50px;
+    padding: 30px;
+    background: #fff;
+  }
+
+/* Adding width to the summary grid column in the index page */
+  .my-summary-padding{
+      max-width: 40%;
+  }
+  
+  .row-padding{
+    padding: 30px;
+  }
+
+  /* Adjusting visualizations image size */
+  .img-size{
+    width: 50% !important;
+    min-height: 120px;
+  }
+
+  /* Applying font-size and color to the data table */
+  #my-data-paragraph{
+    font-size: 14px;
+    color: black;
+  }
+
+  /* Adding a border to the visualization image for the active page
+   */
+  .my-img-active{
+    border: solid 2px rgb(68, 151, 151);
+  }
