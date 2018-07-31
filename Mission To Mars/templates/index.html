@@ -38,12 +38,12 @@
                 </div>                
             </div>
             <div class="col-md-4">
-                <div class="row border border-light">
+                <div class="col-md-12 border border-light">
                     <h6>Current Weather on Mars</h6>
-                    <p class="overflow-ellipsis">{{mars_data.weather}}</p>
+                    <p style="overflow-wrap: break-word">{{mars_data.weather}}</p>
                 </div>
                 <br>
-                <div class="row">
+                <div class="col-md-12">
                     <h6>Mars Facts</h6>
                     <div>{{mars_data.facts | safe}}</div>
                 </div>
