@@ -114,18 +114,21 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
   if (chosenYAxis === "healthcare") {
     var ylabel = "Lacks Healthcare:";
   }
-  else if (chosenXAxis === "smokes") {
+  else if (chosenYAxis === "smokes") {
     var ylabel = "Smokes:";
   }
-  else if (chosenXAxis === "obesity") {
+  else if (chosenYAxis === "obesity") {
     var ylabel = "Obesity:";
   }
 
+  console.log("Ylabel before add to the tooltip: ", ylabel);
+   
   var toolTip = d3.tip()
     .attr("class", "d3-tip")
     .offset([80, -60])
     .html(function(d) {
-      return (`${d.state}<br>${xlabel} ${d[chosenXAxis]}<br>${ylabel} ${d[chosenYAxis]} %`);
+      console.log("ylabel: ", ylabel);
+      return (`${ylabel} ${d.state}<br>${xlabel} ${d[chosenXAxis]}<br>${ylabel} ${d[chosenYAxis]} %`);
     });
 
   circlesGroup.call(toolTip);
@@ -274,7 +277,7 @@ function successHandle(healthCensusData) {
         circlesGroup = renderXCircles(xLinearScale, chosenXAxis, circlesGroup, circlesLabels);
 
         // updates tooltips with new info
-        circlesGroup = updateToolTip(chosenXAxis, chosenXAxis, circlesGroup);
+        circlesGroup = updateToolTip(chosenXAxis, chosenYAxis, circlesGroup);
 
         // changes classes to change bold text
         switch(chosenXAxis){
@@ -321,6 +324,7 @@ function successHandle(healthCensusData) {
   ylabelsGroup.selectAll("text")
   .on("click", function(){
     var value = d3.select(this).attr("value");
+    console.log("when clicked on Y-axis: ", ylabel);
     if (value !== chosenYAxis) {
 
       // replaces chosenYAxis with value
