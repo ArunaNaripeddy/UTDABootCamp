@@ -97,6 +97,13 @@ d3.select("#filter-btn")
 d3.select("#reset-btn")
   .on("click", function(){
     refreshTable();
+    generateTable(tableData);
     d3.selectAll("div>form #datetime").property("value", "");
   });
+
+// On page load, display all the data available
+d3.select(window)
+  .on("load", function(){
+    generateTable(tableData);
+  })
 
